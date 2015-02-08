@@ -1,0 +1,275 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\FTPserver.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\shell32_10.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Slyar FTPserver"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Slyar FTPserver 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2010",IDC_STATIC,40,22,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "http://www.slyar.com",IDC_STATIC,40,34,156,8
+END
+
+IDD_FTPSERVER_DIALOG DIALOGEX 0, 0, 251, 169
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Slyar FTPserver v1.0"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "侦听端口:",IDC_STATIC,10,7,37,8
+    LTEXT           "最大连接:",IDC_STATIC,10,21,37,8
+    LTEXT           "账户名称:",IDC_STATIC,10,35,37,8
+    LTEXT           "账户密码:",IDC_STATIC,10,49,37,8
+    LTEXT           "欢迎信息:",IDC_STATIC,10,63,37,8
+    LTEXT           "退出信息:",IDC_STATIC,10,77,37,8
+    GROUPBOX        "账户权限",IDC_STATIC,2,106,245,23
+    CONTROL         138,IDC_STATIC,"Static",SS_BITMAP,106,5,137,25
+    CTEXT           "北京师范大学珠海分校信息技术学院\n计算机科学与技术系\n作者：姜南 廖华琼",
+                    IDC_STATIC,106,34,137,25
+    EDITTEXT        IDC_EDIT_PORT,54,5,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAXUSER,54,19,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_USER,54,33,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,54,47,50,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WELCOME,54,61,189,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_QUIT,54,75,189,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FOLDER,54,89,189,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "访问目录:",IDC_BTN_BROWSE,7,89,42,13
+    CONTROL         "下载文件",IDC_CHECK_DOWNLOAD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,116,44,10
+    CONTROL         "上传文件",IDC_CHECK_UPLOAD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,54,116,44,10
+    CONTROL         "文件更名",IDC_CHECK_RENAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,102,116,44,10
+    CONTROL         "删除文件",IDC_CHECK_DELETE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,151,116,44,10
+    CONTROL         "创建目录",IDC_CHECK_CREATEDIR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,200,116,44,10
+    DEFPUSHBUTTON   "启动服务",IDC_BTN_START,9,135,46,13
+    PUSHBUTTON      "停止服务",IDC_BTN_STOP,101,135,46,13
+    PUSHBUTTON      "退出程序",IDC_BTN_QUIT,193,135,46,13
+    LTEXT           "Static",IDC_STATE,1,155,249,13,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+END
+
+IDD_QUIT DIALOG DISCARDABLE  0, 0, 175, 47
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "你确定要退出程序吗？"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "最小化",IDC_BTN_MINSIZE,10,16,45,14
+    PUSHBUTTON      "退出",IDC_BTN_EXIT,65,16,45,14
+    PUSHBUTTON      "取消",IDC_BTN_CANCEL,122,16,45,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Slyar FTPserver\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Slyar FTPserver\0"
+            VALUE "LegalCopyright", "版权所有 Slyar(www.slyar.com )(C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "FTPserver.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Slyar FTPserver\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_FTPSERVER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 250
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 168
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "popup"
+    BEGIN
+        MENUITEM "显示",                        ID_APP_SHOW
+        MENUITEM "退出",                        ID_APP_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP              BITMAP  DISCARDABLE     "res\\logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 FTPserver(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\FTPserver.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
